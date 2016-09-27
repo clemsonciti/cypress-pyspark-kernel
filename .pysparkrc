@@ -1,0 +1,18 @@
+# -----------------------------------------------------------------------------
+# Configure the following parameters: notice that underscores are used here
+# and hyphens are also used below.
+# -----------------------------------------------------------------------------
+num_executors=1
+executor_cores=1
+executor_memory=1g
+driver_memory=1g
+# -----------------------------------------------------------------------------
+
+# -----------------------------------------------------------------------------
+# LEAVE THIS ALONE!
+# -----------------------------------------------------------------------------
+pyspark_submit_args="--master yarn --num-executors ${num_executors} --executor-cores ${executor_cores} --executor-memory ${executor_memory} --driver-memory ${driver_memory} pyspark-shell"
+
+export "PYSPARK_SUBMIT_ARGS"="${pyspark_submit_args}"
+# -----------------------------------------------------------------------------
+

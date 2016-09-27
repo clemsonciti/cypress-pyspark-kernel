@@ -1,0 +1,23 @@
+#!/usr/bin/env bash
+cd "$(dirname $0)"
+
+ANACONDA_MODULE="anaconda/4.0.0"
+
+module purge
+module add ${ANACONDA_MODULE}
+pip install --user remote-ikernel
+echo
+echo "JUPYTER KERNELS BEFORE"
+jupyter kernelspec list
+echo
+jupyter kernelspec uninstall -f remote-dsciu001-python2-pyspark remote-dsciu001-python2
+jupyter kernelspec install --user kernels/remote-dsciu001-python2-pyspark
+jupyter kernelspec install --user kernels/remote-dsciu001-python2
+echo
+echo "JUPYTER KERNELS AFTER"
+jupyter kernelspec list
+cp --no-clobber .pysparkrc ~/
+cp bin/cypress-pyspark-jhub.sh ~/.local/bin/
+echo
+echo "You may customize the YARN resource request made for your PySpark job by updating the file located at: ${HOME}/.pysparkrc"
+
