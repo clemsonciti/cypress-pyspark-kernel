@@ -1,6 +1,6 @@
 {
   "argv": [
-    "/software/anaconda/4.0.0/bin/python", 
+    "/software/anaconda/4.2.0/bin/python", 
     "-m", 
     "remote_ikernel", 
     "--interface", 
@@ -11,7 +11,7 @@
     "~/.local/bin/cypress-pyspark-jhub.sh -f {host_connection_file}", 
     "{connection_file}"
   ], 
-  "display_name": "Anaconda 4.0.0 (Python 2) PySpark on Cypress", 
+  "display_name": "Anaconda 4.2.0 (Python 2) PySpark on Cypress", 
   "remote_ikernel_argv": [
     "~/.local/bin/remote_ikernel", 
     "manage", 

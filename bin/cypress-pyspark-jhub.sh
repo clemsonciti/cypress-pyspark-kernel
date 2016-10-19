@@ -9,5 +9,4 @@ export PYTHONSTARTUP="/usr/hdp/2.4.2.0-258/spark/python/pyspark/shell.py"
 source ~/.pysparkrc
 
 mkdir -p /scratch2/$USER/__pyspark_jhub_cypress__
-exec /software/anaconda/4.0.0/bin/python -m ipykernel $@ 2>&1>>/scratch2/$USER/__pyspark_jhub_cypress__/$(date +%s).log
-
+exec /software/anaconda/4.2.0/bin/python -m ipykernel $@ 2>&1>>/scratch2/$USER/__pyspark_jhub_cypress__/$(date +%s).log

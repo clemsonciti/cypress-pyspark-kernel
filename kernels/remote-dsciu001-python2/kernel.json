@@ -1,6 +1,6 @@
 {
   "argv": [
-    "/software/anaconda/4.0.0/bin/python", 
+    "/software/anaconda/4.2.0/bin/python", 
     "-m", 
     "remote_ikernel", 
     "--interface", 
@@ -8,15 +8,15 @@
     "--host", 
     "dsciu001", 
     "--kernel_cmd", 
-    "/software/anaconda/4.0.0/bin/python -m ipykernel -f {host_connection_file}", 
+    "/software/anaconda/4.2.0/bin/python -m ipykernel -f {host_connection_file}", 
     "{connection_file}"
   ], 
-  "display_name": "Anaconda 4.0.0 (Python 2) on Cypress", 
+  "display_name": "Anaconda 4.2.0 (Python 2) on Cypress", 
   "remote_ikernel_argv": [
     "~/.local/bin/remote_ikernel", 
     "manage", 
     "--add", 
-    "--kernel_cmd=/software/anaconda/4.0.0/bin/python -m ipykernel -f {connection_file}", 
+    "--kernel_cmd=/software/anaconda/4.2.0/bin/python -m ipykernel -f {connection_file}", 
     "--name=Python on Cypress", 
     "--interface=ssh", 
     "--host=dsciu001"
