@@ -17,6 +17,6 @@ echo
 echo "JUPYTER KERNELS AFTER"
 jupyter kernelspec list
 cp --no-clobber .pysparkrc ~/
-cp bin/cypress-pyspark-jhub.sh ~/.local/bin/
+install bin/cypress-pyspark-jhub.sh ~/.local/bin/
 echo
 echo "You may customize the YARN resource request made for your PySpark job by updating the file located at: ${HOME}/.pysparkrc"

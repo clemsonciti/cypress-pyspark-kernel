@@ -5,14 +5,14 @@ For running PySpark on the Cypress Cluster via the JupyterHub notebook interface
 ### For users with a Mac or Linux Operating System
 Run the following command in a console on your computer (replacing $USER with your Clemson University username):
 ```
-ssh $USER@cypress.clemson.edu 'git clone https://github.com/clemsonciti/cypress-pyspark-kernel && cd cypress-pyspark-kernel && ./setup'
+ssh $USER@cypress.clemson.edu 'git clone https://github.com/clemsonciti/cypress-pyspark-kernel && cd cypress-pyspark-kernel && bash setup'
 ```
 Use your Clemson University password if prompted for one.
 
 ### For users with a Windows Operating System
 If you are using the *Secure Shell Client* software or *PuTTY* on Windows, then you need to connect to *cypress.clemson.edu* first using your Clemson University username and password. Then, in your console, run the following command:
 ```
-git clone https://github.com/clemsonciti/cypress-pyspark-kernel && cd cypress-pyspark-kernel && ./setup
+git clone https://github.com/clemsonciti/cypress-pyspark-kernel && cd cypress-pyspark-kernel && bash setup
 ```
 
 ## Use PySpark on Cypress via the Palmetto Cluster JupyterHub
