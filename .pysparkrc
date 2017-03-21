@@ -14,5 +14,6 @@ driver_memory=1g
 pyspark_submit_args="--master yarn --num-executors ${num_executors} --executor-cores ${executor_cores} --executor-memory ${executor_memory} --driver-memory ${driver_memory} pyspark-shell"
 
 export "PYSPARK_SUBMIT_ARGS"="${pyspark_submit_args}"
+export "PYSPARK_PYTHON"="/software/anaconda/4.2.0/bin/python"
 # -----------------------------------------------------------------------------
 
